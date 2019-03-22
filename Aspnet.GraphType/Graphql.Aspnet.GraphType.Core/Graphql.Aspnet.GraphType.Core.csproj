@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <DebugType>Full</DebugType>
+        <RootNamespace>Graphql.Aspnet.GraphType.Core</RootNamespace>
+    </PropertyGroup>
+
+</Project>

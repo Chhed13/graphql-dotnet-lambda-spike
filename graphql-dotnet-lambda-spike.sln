@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspnet.SchemaFirst", "Aspnet.SchemaFirst", "{85C65F7B-FAD6-469A-A69F-580BDB95C55E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspnet.GraphType", "Aspnet.GraphType", "{343896A1-8F28-4A9C-864E-B84293689C39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotnet.Pure", "Dotnet.Pure", "{6F9D8814-1DCA-4483-8873-215418B580E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Aspnet.GraphType.Api", "Aspnet.GraphType\Graphql.Aspnet.GraphType.Api\Graphql.Aspnet.GraphType.Api.csproj", "{27C668A7-3CB9-4F51-87EC-A8F609684350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Aspnet.GraphType.Core", "Aspnet.GraphType\Graphql.Aspnet.GraphType.Core\Graphql.Aspnet.GraphType.Core.csproj", "{0556BB6F-7F10-4F13-AFE6-3453167E151C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Aspnet.GraphType.Data", "Aspnet.GraphType\Graphql.Aspnet.GraphType.Data\Graphql.Aspnet.GraphType.Data.csproj", "{9C53084B-A233-495C-AB43-DE9B1C8191A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Aspnet.GraphType.Tests.Integration", "Aspnet.GraphType\Graphql.Aspnet.GraphType.Tests.Integration\Graphql.Aspnet.GraphType.Tests.Integration.csproj", "{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Aspnet.GraphType.Tests.Unit", "Aspnet.GraphType\Graphql.Aspnet.GraphType.Tests.Unit\Graphql.Aspnet.GraphType.Tests.Unit.csproj", "{7A74A546-27F1-4619-92BE-AF99BAA53F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Dotnet.Pure.Api", "Dotnet.Pure\Graphql.Dotnet.Pure.Api\Graphql.Dotnet.Pure.Api.csproj", "{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Dotnet.Pure.Core", "Dotnet.Pure\Graphql.Dotnet.Pure.Core\Graphql.Dotnet.Pure.Core.csproj", "{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Dotnet.Pure.Data", "Dotnet.Pure\Graphql.Dotnet.Pure.Data\Graphql.Dotnet.Pure.Data.csproj", "{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Dotnet.Pure.Tests.Unit", "Dotnet.Pure\Graphql.Dotnet.Pure.Tests.Unit\Graphql.Dotnet.Pure.Tests.Unit.csproj", "{12B86B69-73E1-427B-B929-29F6AABC04E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql.Dotnet.Pure.Tests.Integration", "Dotnet.Pure\Graphql.Dotnet.Pure.Tests.Integration\Graphql.Dotnet.Pure.Tests.Integration.csproj", "{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27C668A7-3CB9-4F51-87EC-A8F609684350} = {343896A1-8F28-4A9C-864E-B84293689C39}
+		{0556BB6F-7F10-4F13-AFE6-3453167E151C} = {343896A1-8F28-4A9C-864E-B84293689C39}
+		{9C53084B-A233-495C-AB43-DE9B1C8191A6} = {343896A1-8F28-4A9C-864E-B84293689C39}
+		{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E} = {343896A1-8F28-4A9C-864E-B84293689C39}
+		{7A74A546-27F1-4619-92BE-AF99BAA53F69} = {343896A1-8F28-4A9C-864E-B84293689C39}
+		{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335} = {6F9D8814-1DCA-4483-8873-215418B580E3}
+		{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3} = {6F9D8814-1DCA-4483-8873-215418B580E3}
+		{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED} = {6F9D8814-1DCA-4483-8873-215418B580E3}
+		{12B86B69-73E1-427B-B929-29F6AABC04E6} = {6F9D8814-1DCA-4483-8873-215418B580E3}
+		{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E} = {6F9D8814-1DCA-4483-8873-215418B580E3}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27C668A7-3CB9-4F51-87EC-A8F609684350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C668A7-3CB9-4F51-87EC-A8F609684350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C668A7-3CB9-4F51-87EC-A8F609684350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C668A7-3CB9-4F51-87EC-A8F609684350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0556BB6F-7F10-4F13-AFE6-3453167E151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0556BB6F-7F10-4F13-AFE6-3453167E151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0556BB6F-7F10-4F13-AFE6-3453167E151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0556BB6F-7F10-4F13-AFE6-3453167E151C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C53084B-A233-495C-AB43-DE9B1C8191A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C53084B-A233-495C-AB43-DE9B1C8191A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C53084B-A233-495C-AB43-DE9B1C8191A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C53084B-A233-495C-AB43-DE9B1C8191A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1C93AF-5E2F-4415-A6D3-D0DEA73AF19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A74A546-27F1-4619-92BE-AF99BAA53F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A74A546-27F1-4619-92BE-AF99BAA53F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A74A546-27F1-4619-92BE-AF99BAA53F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A74A546-27F1-4619-92BE-AF99BAA53F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C070D9-5266-4DF0-BCE4-BA12EF1A4335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D87E97-9BF9-4C46-8AF5-BD5F233D09C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EB58A8-2BF3-47AB-B0F4-3AD6A75FF0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B86B69-73E1-427B-B929-29F6AABC04E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B86B69-73E1-427B-B929-29F6AABC04E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B86B69-73E1-427B-B929-29F6AABC04E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B86B69-73E1-427B-B929-29F6AABC04E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689AB2A7-8D13-4CFA-B149-3D5B1AB1884E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

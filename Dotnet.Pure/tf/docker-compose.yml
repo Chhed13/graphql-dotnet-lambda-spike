@@ -1,0 +1,23 @@
+version: '2.1'
+services:
+  localstack:
+    privileged: true
+    image: localstack/localstack:0.8.10
+    container_name: localstack
+    hostname: localstack
+    ports:
+      - "4567-4583:4567-4583"
+      - "${PORT_WEB_UI-8080}:${PORT_WEB_UI-8080}"
+    environment:
+      - SERVICES=${SERVICES- }  #s3,lambda
+#      - DEBUG=${DEBUG- }
+      - DATA_DIR=${DATA_DIR- }
+#      - PORT_WEB_UI=${PORT_WEB_UI- }
+      - LAMBDA_EXECUTOR=docker
+      - LAMBDA_REMOTE_DOCKER=false
+      - LAMBDA_DOCKER_NETWORK=tf_default
+#      - KINESIS_ERROR_PROBABILITY=${KINESIS_ERROR_PROBABILITY- }
+      - y=unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/localstack:/tmp/localstack

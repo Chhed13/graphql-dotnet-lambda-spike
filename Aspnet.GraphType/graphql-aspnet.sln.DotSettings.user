@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=5A510FD1_002D1621_002D4F4C_002D9DCF_002D1D6E841C3BEC_002Fd_003AModels_002Ff_003ADroidType_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:Int64 x:Key="/Default/CodeStyle/Naming/CSharpAutoNaming/AutoNamingCompletedVersion/@EntryValue">2</s:Int64>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Property/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Parameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/AutoDetectedNamingRules/=Method/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/CodeStyle/Naming/CSharpNaming/ApplyAutoDetectedRules/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/Naming/CSharpAutoNaming/IsNamingAutoDetectionCompleted/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/home/arotchev/.nuget/packages/graphql/2.4.0/lib/netstandard2.0/GraphQL.dll" /&gt;
+  &lt;Assembly Path="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.hosting.abstractions/2.1.1/lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll" /&gt;
+  &lt;Assembly Path="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.hosting.abstractions/2.1.1/lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll" /&gt;
+  &lt;Assembly Path="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.hosting/2.1.1/lib/netstandard2.0/Microsoft.Extensions.Hosting.dll" /&gt;
+  &lt;Assembly Path="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.hosting/2.1.1/lib/netstandard2.0/Microsoft.AspNetCore.Hosting.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
