@@ -1,8 +1,0 @@
-{
-  "region": "us-east-1",
-  "profile": "test",
-  "configuration": "Release",
-  "framework": "netcoreapp2.1",
-  "function-runtime": "dotnetcore2.1",
-  "function-name": "graphql-api"
-}

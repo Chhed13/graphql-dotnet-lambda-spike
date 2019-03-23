@@ -21,7 +21,7 @@ namespace graphql.data.EntityFramework.Seed
             };
             if (!db.Episodes.Any())
             {
-                db._logger.LogInformation("Seeding episodes");
+                db.Logger.LogInformation("Seeding episodes");
                 db.Episodes.AddRange(episodes);
                 db.SaveChanges();
             }
@@ -36,7 +36,7 @@ namespace graphql.data.EntityFramework.Seed
             };
             if (!db.Planets.Any())
             {
-                db._logger.LogInformation("Seeding planets");
+                db.Logger.LogInformation("Seeding planets");
                 db.Planets.AddRange(planets);
                 db.SaveChanges();
             }
@@ -109,7 +109,7 @@ namespace graphql.data.EntityFramework.Seed
             };
             if (!db.Humans.Any())
             {
-                db._logger.LogInformation("Seeding humans");
+                db.Logger.LogInformation("Seeding humans");
                 db.Humans.AddRange(humans);
                 db.SaveChanges();
             }
@@ -146,7 +146,7 @@ namespace graphql.data.EntityFramework.Seed
             };
             if (!db.Droids.Any())
             {
-                db._logger.LogInformation("Seeding droids");
+                db.Logger.LogInformation("Seeding droids");
                 db.Droids.AddRange(droids);
                 db.SaveChanges();
             }
@@ -205,7 +205,7 @@ namespace graphql.data.EntityFramework.Seed
             };
             if (!db.CharacterFriends.Any())
             {
-                db._logger.LogInformation("Seeding character's friends");
+                db.Logger.LogInformation("Seeding character's friends");
                 db.Characters.UpdateRange(characters);
                 db.SaveChanges();
             }

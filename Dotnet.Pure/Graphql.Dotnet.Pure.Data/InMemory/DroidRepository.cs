@@ -8,7 +8,7 @@ namespace graphql.data.InMemory
     {
          public DroidRepository(ILogger<DroidRepository> logger): base(logger)
         {
-            _entities.Add(new Droid {Id = 2001, Name = "R2-D2"});
+            Entities.Add(new Droid {Id = 2001, Name = "R2-D2"});
         }
 
 //      public Task<Droid> Get(int id)

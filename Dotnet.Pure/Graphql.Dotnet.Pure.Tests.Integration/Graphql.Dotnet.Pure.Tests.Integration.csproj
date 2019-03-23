@@ -20,4 +20,8 @@
       <ProjectReference Include="..\Graphql.Dotnet.Pure.Api\Graphql.Dotnet.Pure.Api.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Api\Controllers" />
+    </ItemGroup>
+
 </Project>

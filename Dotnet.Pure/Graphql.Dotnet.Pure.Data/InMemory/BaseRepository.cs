@@ -6,15 +6,15 @@ using Microsoft.Extensions.Logging;
 
 namespace graphql.data.InMemory
 {
-    public abstract class BaseRepository<TEntity, Tkey>: IBaseRepository<TEntity, Tkey>
-        where TEntity: class, IEntity<Tkey>, new()
+    public abstract class BaseRepository<TEntity, TKey>: IBaseRepository<TEntity, TKey>
+        where TEntity: class, IEntity<TKey>, new()
     {
-        protected List<TEntity> _entities = new List<TEntity>();
-        protected readonly ILogger _logger;
+        protected List<TEntity> Entities = new List<TEntity>();
+        protected readonly ILogger Logger;
 
         protected BaseRepository(ILogger logger)
         {
-            _logger = logger;
+            Logger = logger;
         }
 
         public virtual Task<List<TEntity>> GetAll()
@@ -32,18 +32,18 @@ namespace graphql.data.InMemory
             throw new System.NotImplementedException();
         }
 
-        public virtual Task<TEntity> Get(Tkey id)
+        public virtual Task<TEntity> Get(TKey id)
         {
-            _logger.LogInformation("Get {type} with id = {id}", typeof(TEntity).Name, id);
-            return Task.FromResult(_entities.FirstOrDefault());
+            Logger.LogInformation("Get {type} with id = {id}", typeof(TEntity).Name, id);
+            return Task.FromResult(Entities.FirstOrDefault());
         }
 
-        public virtual Task<TEntity> Get(Tkey id, string include)
+        public virtual Task<TEntity> Get(TKey id, string include)
         {
             throw new System.NotImplementedException();
         }
 
-        public virtual Task<TEntity> Get(Tkey id, IEnumerable<string> includes)
+        public virtual Task<TEntity> Get(TKey id, IEnumerable<string> includes)
         {
             throw new System.NotImplementedException();
         }
@@ -58,7 +58,7 @@ namespace graphql.data.InMemory
             throw new System.NotImplementedException();
         }
 
-        public virtual void Delete(Tkey id)
+        public virtual void Delete(TKey id)
         {
             throw new System.NotImplementedException();
         }

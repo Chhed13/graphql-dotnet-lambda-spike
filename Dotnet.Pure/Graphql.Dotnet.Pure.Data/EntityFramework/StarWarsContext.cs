@@ -1,22 +1,21 @@
 using graphql.core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System.Configuration;
 
 namespace graphql.data.EntityFramework
 {
-    public class StarWarsContext : DbContext
+    public sealed class StarWarsContext : DbContext
     {
-        public readonly ILogger _logger;
-        private bool _migrations;
+        public readonly ILogger Logger;
+        private readonly bool _migrations;
 
-        public virtual DbSet<Episode> Episodes { get; set; }
-        public virtual DbSet<Planet> Planets { get; set; }
-        public virtual DbSet<Character> Characters { get; set; }
-        public virtual DbSet<CharacterFriend> CharacterFriends { get; set; }
-        public virtual DbSet<CharacterEpisode> CharacterEpisodes { get; set; }
-        public virtual DbSet<Droid> Droids { get; set; }
-        public virtual DbSet<Human> Humans { get; set; }
+        public DbSet<Episode> Episodes { get; set; }
+        public DbSet<Planet> Planets { get; set; }
+        public DbSet<Character> Characters { get; set; }
+        public DbSet<CharacterFriend> CharacterFriends { get; set; }
+        public DbSet<CharacterEpisode> CharacterEpisodes { get; set; }
+        public DbSet<Droid> Droids { get; set; }
+        public DbSet<Human> Humans { get; set; }
 
         public StarWarsContext()
         {
@@ -26,7 +25,7 @@ namespace graphql.data.EntityFramework
         public StarWarsContext(DbContextOptions options, ILogger<StarWarsContext> logger)
             : base(options)
         {
-            _logger = logger;
+            Logger = logger;
             Database.EnsureCreated();
         }
 

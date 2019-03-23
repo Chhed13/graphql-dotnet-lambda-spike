@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 using AutoMapper;
 using graphql.api.Models;
 using graphql.core.Data;
@@ -33,9 +34,9 @@ namespace graphql.api
             else
             {
                 string connString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
-                if (connString.IsEmpty())
+                if (string.IsNullOrEmpty(connString))
                 {
-                    throw new Exception("Connection string is empty");
+                    throw new InvalidConstraintException("Connection string is null or empty");
                 }
                 services.AddDbContext<StarWarsContext>(options => options.UseNpgsql(connString)).AddEntityFrameworkNpgsql();
 
