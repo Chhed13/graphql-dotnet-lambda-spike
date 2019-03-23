@@ -1,6 +1,7 @@
 using Graphql.Aspnet.Api.GraphType.Models;
 using Graphql.Aspnet.Core.Data;
 using Graphql.Aspnet.Core.Logic;
+using Graphql.Aspnet.Core.Models;
 using GraphQL.Types;
 
 namespace Graphql.Aspnet.Api.GraphType.Resolvers

@@ -41,7 +41,8 @@ type Human implements Character {
 
 input DroidInput {
   id: Int!
-  name: String = null
+  name: String!
+  primaryFunction: String
 }
 
 enum Episode {

@@ -1,12 +1,11 @@
-using Graphql.Aspnet.Api.GraphType.Models;
 using Graphql.Aspnet.Core.Data;
 using Graphql.Aspnet.Core.Logic;
 using Graphql.Aspnet.Core.Models;
-using GraphQL.Types;
+using GraphQL;
 
-namespace Graphql.Aspnet.Api.GraphType.Resolvers
+namespace Graphql.Aspnet.Api.SchemaFirst.Resolvers
 {
-    public class Mutation : ObjectGraphType
+    public class Mutation
     {
         private readonly ITrilogyHeroes _trilogyHeroes;
         private readonly IDroidRepository _droidRepository;
@@ -18,23 +17,12 @@ namespace Graphql.Aspnet.Api.GraphType.Resolvers
             _trilogyHeroes = trilogyHeroes;
             _droidRepository = droidRepository;
             _humanRepository = humanRepository;
-
-            Name = "Mutation";
-
-            Field<DroidType>(
-                Name = "addDroid",
-                arguments: new QueryArguments(
-                    new QueryArgument<DroidTypeInput> {Name = "droid", DefaultValue = null}),
-                resolve: AddDroid
-            );
         }
 
-        private object AddDroid(ResolveFieldContext<object> context)
+        [GraphQLMetadata("addDroid")]
+        public Droid AddDroid(Droid droid)
         {
-            var droid = context.GetArgument<Droid>("droid");
-            var droidOut = _droidRepository.Add(droid);
-
-            return droidOut;
+            return _droidRepository.Add(droid);
         }
     }
 }

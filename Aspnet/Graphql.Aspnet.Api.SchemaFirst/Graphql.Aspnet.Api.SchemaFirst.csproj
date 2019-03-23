@@ -22,4 +22,9 @@
         <ProjectReference Include="..\Graphql.Aspnet.Core\Graphql.Aspnet.Core.csproj" />
         <ProjectReference Include="..\Graphql.Aspnet.Data\Graphql.Aspnet.Data.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="SDL\schema.graphqls" />
+      <EmbeddedResource Include="SDL\schema.graphqls" />
+    </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-namespace Graphql.Aspnet.Api.GraphType.Models
+namespace Graphql.Aspnet.Core.Models
 {
     public enum Episodes
     {

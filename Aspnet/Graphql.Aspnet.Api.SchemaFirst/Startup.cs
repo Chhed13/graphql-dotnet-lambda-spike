@@ -2,10 +2,10 @@
 using System.IO;
 using System.Reflection;
 using System.Text;
-using Graphql.Aspnet.Api.GraphType.Models;
-using Graphql.Aspnet.Api.GraphType.Resolvers;
+using Graphql.Aspnet.Api.SchemaFirst.Resolvers;
 using Graphql.Aspnet.Core.Data;
 using Graphql.Aspnet.Core.Logic;
+using Graphql.Aspnet.Core.Models;
 using Graphql.Aspnet.Data.EntityFramework.Seed;
 using Graphql.Aspnet.Data.InMemory;
 using Graphql.Aspnet.Data.InMemory.Repositories;
@@ -20,7 +20,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Schema = Graphql.Aspnet.Api.GraphType.Resolvers.Schema;
 
 namespace Graphql.Aspnet.Api.SchemaFirst
 {
@@ -71,13 +70,6 @@ namespace Graphql.Aspnet.Api.SchemaFirst
             }
 
             services.AddSingleton<ITrilogyHeroes, TrilogyHeroes>();
-            services.AddSingleton<DroidType>();
-            services.AddSingleton<DroidTypeInput>();
-            services.AddSingleton<HumanType>();
-            services.AddSingleton<CharacterInterface>();
-            services.AddSingleton<EpisodeEnum>();
-            services.AddSingleton<Query>();
-            services.AddSingleton<Mutation>();
 
             var assembly = Assembly.GetExecutingAssembly();
             var resourceStream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.SDL.schema.graphqls");
@@ -94,12 +86,21 @@ namespace Graphql.Aspnet.Api.SchemaFirst
             }
 
             services.AddSingleton<Query>();
-            services.AddSingleton(s => GraphQL.Types.Schema.For(
+            services.AddSingleton<Mutation>();
+            services.AddSingleton<CharacterResolver<Droid>>();
+            services.AddSingleton<DroidResolver>();
+            services.AddSingleton<CharacterResolver<Human>>();
+            services.AddSingleton<HumanResolver>();
+
+            services.AddSingleton(s => Schema.For(
                 schema,
                 _ =>
                 {
                     _.DependencyResolver = new FuncDependencyResolver(s.GetRequiredService);
                     _.Types.Include<Query>();
+                    _.Types.Include<Mutation>();
+                    _.Types.Include<DroidResolver>();
+                    _.Types.Include<HumanResolver>();
                 }));
 
             services.AddGraphQL(
