@@ -86,10 +86,8 @@ namespace Graphql.Api.Aspnet.SchemaFirst
 
             services.AddSingleton<Query>();
             services.AddSingleton<Mutation>();
-            services.AddSingleton<CharacterResolver<Droid>>();
-            services.AddSingleton<DroidResolver>();
-            services.AddSingleton<CharacterResolver<Human>>();
-            services.AddSingleton<HumanResolver>();
+            RegisterCharacterResolver<Droid, DroidResolver>(services);
+            RegisterCharacterResolver<Human, HumanResolver>(services);
 
             services.AddSingleton(s => Schema.For(
                 schema,
@@ -132,6 +130,14 @@ namespace Graphql.Api.Aspnet.SchemaFirst
             {
                 db.EnsureSeedData();
             }
+        }
+
+        private static void RegisterCharacterResolver<TCharacter, TCharacterResolver>(IServiceCollection services)
+            where TCharacterResolver : CharacterResolver<TCharacter>
+            where TCharacter : Character
+        {
+            services.AddSingleton<CharacterResolver<TCharacter>>();
+            services.AddSingleton<TCharacterResolver>();
         }
     }
 }
