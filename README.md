@@ -6,7 +6,7 @@
 Feature - look inside of each implementation
 
 To run with InMemoryMod
-`export ASPNETCORE_ENVIRONMENT=Test && dotnet run -p Aspnet/Graphql.Aspnet.Api.GraphType`
+`export ASPNETCORE_ENVIRONMENT=Test && dotnet run -p Aspnet/Graphql.Api.Aspnet.GraphType`
 
 To run with real Postgres
-`dotnet run -p Aspnet/Graphql.Aspnet.Api.GraphType`
+`dotnet run -p Aspnet/Graphql.Api.Aspnet.GraphType`

@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <DebugType>Full</DebugType>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <PackageId>Graphql.Api.Dotnet.GraphType</PackageId>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="1.1.3" />
+        <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.4.0" />
+        <PackageReference Include="GraphQL" Version="2.4.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.4" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Graphql.Core\Graphql.Core.csproj" />
+        <ProjectReference Include="..\Graphql.Data\Graphql.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_UnmanagedRegistrationCache Remove="obj\Graphql.Api.Dotnet.GraphType.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\Graphql.Api.Dotnet.GraphType.csproj.UnmanagedRegistration.cache" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.csproj.ResolveComReference.cache" />
+      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.csproj.ResolveComReference.cache" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.dll" />
+      <IntermediateAssembly Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.pdb" />
+      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.pdb" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.dll" />
+      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ApplicationManifest Remove="obj\Debug\netcoreapp2.1\Native.Graphql.Api.Dotnet.GraphType.manifest" />
+      <ApplicationManifest Remove="obj\Debug\netcoreapp2.1\Native.Graphql.Api.Dotnet.GraphType.manifest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <DeployManifest Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.application" />
+      <DeployManifest Remove="obj\Debug\netcoreapp2.1\Graphql.Api.Dotnet.GraphType.application" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="SDL\schema.graphqls" />
+    </ItemGroup>
+
+</Project>
