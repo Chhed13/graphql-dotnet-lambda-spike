@@ -1,59 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
         <DebugType>Full</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="Microsoft.EntityFrameworkCore, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
-        <HintPath>..\..\..\..\..\..\..\..\..\usr\share\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
-      </Reference>
-      <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
-        <HintPath>..\..\..\..\..\..\..\..\..\usr\share\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.logging.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
-      </Reference>
-      <Reference Include="System.Collections, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-        <HintPath>..\..\..\..\..\..\..\..\..\usr\share\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.Collections.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.2" PrivateAssets="All" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" PrivateAssets="All" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
-      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.2" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Graphql.Core\Graphql.Core.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <_UnmanagedRegistrationCache Remove="obj\Graphql.Data.csproj.UnmanagedRegistration.cache" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp2.1\Graphql.Data.csproj.ResolveComReference.cache" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <IntermediateAssembly Remove="obj\Debug\netcoreapp2.1\Graphql.Data.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp2.1\Graphql.Data.pdb" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp2.1\Graphql.Data.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ApplicationManifest Remove="obj\Debug\netcoreapp2.1\Graphql.Data.dll.manifest" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <DeployManifest Remove="obj\Debug\netcoreapp2.1\Graphql.Data.application" />
-    </ItemGroup>
+    
 </Project>

@@ -10,7 +10,7 @@ namespace Graphql.Api.Aspnet.GraphType
             builder
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseApiGateway();
+                .UseLambdaServer();
         }
     }
 }
