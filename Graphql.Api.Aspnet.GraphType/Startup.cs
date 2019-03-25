@@ -77,13 +77,7 @@ namespace Graphql.Api.Aspnet.GraphType
             services.AddSingleton<Mutation>();
 
             var sp = services.BuildServiceProvider();
-            services.AddSingleton<ISchema>(_ =>
-                new Schema(type => (GraphQL.Types.GraphType) sp.GetService(type))
-                {
-                    Query = sp.GetService<Query>(),
-                    Mutation = sp.GetService<Mutation>()
-                }
-            );
+            services.AddSingleton<ISchema>(_ => new Schema(type => (GraphQL.Types.GraphType) sp.GetService(type)));
 
             services.AddGraphQL(options =>
             {

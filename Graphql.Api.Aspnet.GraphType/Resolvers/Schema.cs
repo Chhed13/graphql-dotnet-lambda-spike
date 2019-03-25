@@ -10,6 +10,7 @@ namespace Graphql.Api.Aspnet.GraphType.Resolvers
             : base(new FuncDependencyResolver(resolveType))
         {
             Query = (Query) resolveType(typeof(Query));
+            Mutation = (Mutation) resolveType(typeof(Mutation));
         }
     }
 }
